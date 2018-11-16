@@ -1,0 +1,5 @@
+
+piedweb_cms_faq:
+    path:     /~faq
+    controller: PiedWeb\FaqBundle\Controller\FaqController::show
+    methods:    [POST]

@@ -1,0 +1,14 @@
+services:
+
+
+# --------
+# Admin
+# --------
+
+
+    piedweb.admin.faq:
+        class: PiedWeb\FaqBundle\Admin\FaqAdmin
+        arguments: [~, PiedWeb\FaqBundle\Entity\Faq, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Faq }
+        public: true
